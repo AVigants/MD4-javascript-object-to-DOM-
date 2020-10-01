@@ -9,8 +9,18 @@ let things = majasdObj;
 //dom query
 const cardTitles = document.querySelectorAll('.card-title');
 const cardText = document.querySelectorAll('div.container.text-muted > div > div > div > div > p');
-// cardTitles.forEach(title => title.innerHTML = 'lmao'); we have the titles
-// cardText.forEach(text => text.innerHTML = 'yolo'); we have the text
+const template = `
+<div class="col-md-6 col-lg-3 my-2">
+                <div class="card">
+                    <img src="css/male.jpg" class="card-img-top img-fluid">
+
+                    <div class="card-block text-center">
+                        <h3 class="card-title">h3-tag</h3>
+                        <p class="">p-tag</p>
+                    </div>
+                </div>
+            </div>
+`;
 
 
 things.forEach(element => {
